@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: aqua;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: rgb(46, 42, 46);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 50%;
+}
+h1{
+    font-size: 2rem;
+}
+
+.user-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+}
+.user-input-container{
+    display: flex;
+    justify-content: space-between;
+}
+#user-input{
+    width: 80%;
+    padding: .5rem;
+    border-radius: 5px;
+}
+#search-btn{
+    padding: .5rem;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(82, 82, 255);
+    outline: none;
+}
+#search-btn:hover{
+    cursor: pointer;
+}
+/* .stats-container{
+    display: none;
+} */
+.stats-container{
+    margin-top: 20px;
+}
+.circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid green;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    columns: white;
+    font-weight: 700;
+    background: conic-gradient(
+    green var(--progress-degree, 0%),  
+    black 0%);
+}
+.circle span{
+    position: relative;
+    z-index: 2;
+}
+.progress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.stats-card{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+h3{
+    font-size: 1rem;
+}
+.card{
+    background-color: blanchedalmond;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    width: 45%;
+    max-width: 290px;
+    font-size: 1rem;
+}
